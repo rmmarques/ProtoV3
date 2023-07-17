@@ -168,7 +168,7 @@ void loop() {
   
     // Store measured value into point
     //sensor.addField("rssi", WiFi.RSSI());
-    //sensor.addField("reading", readcounter);
+    sensor.addField("reading", readcounter);
     sensor.addField("temperature", bme.temperature);
     sensor.addField("humidity", bme.humidity);
     sensor.addField("pressure", bme.pressure / 100);
